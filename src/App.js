@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/Navbar';
+import FootBar from './components/FootBar';
+import BodyStuff from './components/BodyStuff';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='overflow-x-hidden bg-sky-950'>
+      {/* nav bar component  */}
+        <NavBar></NavBar>
+      
+      {/* main bar component  */}
+        <BodyStuff></BodyStuff>
+
+      {/* Footbar component  */}
+        <div className='bg-[#0e101b] text-white w-full h-[240px] flex justify-center items-center'>
+          <FootBar></FootBar>
+        </div>
+
     </div>
   );
 }
