@@ -22,7 +22,7 @@ const ApiTest = () => {
     <div>
       <h2>Logo Data</h2>
         <div>
-            <p>{logoData[0]._id}</p>
+            <p>{logoData[0]._id} hola</p>
         </div>
     </div>
   );
